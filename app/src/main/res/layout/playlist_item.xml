@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="7dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="4dp">
+
+            <ImageView
+                android:id="@+id/playlist_photo"
+                android:scaleType="centerCrop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:src="@drawable/ic_launcher_background"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/backTrans"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_gravity="bottom"
+                android:src="#CC000000"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/playlist"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end|center_horizontal"
+                android:layout_marginBottom="6dp"
+                android:text="@string/playlist"
+                android:textSize="12sp"
+                android:layout_marginEnd="26dp"
+                android:textColor="@color/white" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="17dp">
+
+        <TextView
+            android:id="@+id/playlist_title"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:text="Emotional Well-being  Healing Practices for Children" />
+
+        <TextView
+            android:id="@+id/playlist_count_videos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:text="32 videos here" />
+
+    </LinearLayout>
+
+</LinearLayout>

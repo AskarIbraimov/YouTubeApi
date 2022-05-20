@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">YouTubeApi</string>
+    <string name="playlist">playlist</string>
+    <string name="video_series">video series</string>
+</resources>
